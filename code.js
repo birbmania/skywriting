@@ -11,7 +11,8 @@ fetch("https://opensheet.elk.sh/1CHWYkcFNFZG92hvjZmunpM5UOdkk9rSLOiYfXRx46vA/bir
     .then((data) => {
         data.forEach(function(row, index) {
             if (index == 0) return;
-
+            
+            // create a new bird element with emoji and message
             let div = $(`<div class='bird' data-type='` + row.type + `' index="` + index + `">
         <span class='emoji'>` + row.bird + `</span>
         <p>` + row.msg + `</p>
@@ -45,6 +46,7 @@ $("#birds").on("click", ".bird", function () {
     let symbol = $(this).find(".emoji").text();
     let msg = $(this).find("p").text();
 
+    // set information in the look container
     $("#look .bird .emoji").text(symbol);
     $("#look .bird p").text(msg);
 
