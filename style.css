@@ -58,7 +58,9 @@ header {
   --bg-color: #fff;
   --main-color: #badfe7;
   position: absolute;
-  bottom: 6px;
+  bottom: 10px;
+  left: 8px;
+  right: 8px;
   width: 98%;
   height: 49px;
   background-color: var(--bg-color);
