@@ -10,7 +10,7 @@ body {
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
   position: relative;
 }
@@ -19,16 +19,15 @@ header {
   justify-content: center;
   display: flex;
   position: relative;
-  height: 200px;
+  height: 20vh;
 }
 
 #birds {
   position: fixed;
-  height: 90%;
+  height: 70vh;
   width: 90%;
-  top: 3em;
-  left: 3em;
-  right: 3em;
+  top: 20vh;
+  left: 5%;
   box-sizing: border-box;
 }
 
@@ -58,10 +57,10 @@ header {
   --bg-color: #fff;
   --main-color: #badfe7;
   position: absolute;
-  bottom: 10px;
+  bottom: 1em;
   left: 8px;
   right: 8px;
-  width: 98%;
+  width: 94%;
   height: 49px;
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
@@ -221,4 +220,13 @@ header {
 
 #filter.hidden-filter {
     display: none;
+}
+
+@media (max-width: 600px) {
+  #birds {
+    height: 50vh;
+  }
+  #filter {
+    font-size: 14px;
+  }
 }
