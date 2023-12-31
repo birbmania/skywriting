@@ -30,10 +30,10 @@ $("input[name='filter-button']").on("change", function() {
     if (to_filter === "all") {
         $("#birds .bird").show();
     } else {
-        // Hide all birds first
+        // hide all birds first
         $("#birds .bird").hide();
 
-        // Show birds of the selected type
+        // show birds of the selected type
         $(".bird[data-type='" + to_filter + "']").show();
     }
 });
