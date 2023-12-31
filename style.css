@@ -10,9 +10,9 @@ body {
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh; /* Use viewport height to fill the screen */
-  overflow-y: auto; /* Add scrollbar if content is taller than the viewport */
-  position: relative; /* Add position:relative to position #look properly */
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
 }
 
 header {
