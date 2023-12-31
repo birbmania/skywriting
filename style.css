@@ -209,6 +209,6 @@ header {
   font-size: 14px;
 }
 
-body.bird-view #filter {
+#filter.hidden-filter {
     display: none;
 }
