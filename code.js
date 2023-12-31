@@ -39,7 +39,7 @@ $("input[name='filter-button']").on("change", function() {
 });
 
 // look at a bird
-$("#birds").on("click", ".bird", function() {
+$("#birds").on("click", ".bird", function () {
     // get information from bird
     let index = $(this).attr("index");
     let symbol = $(this).find(".emoji").text();
@@ -52,6 +52,8 @@ $("#birds").on("click", ".bird", function() {
 
     // mark bird as seen
     $("#birds .bird[index='" + index + "']").attr("seen", "");
+
+    $("body").addClass("bird-view");
 });
 
 // hide when button is clicked
