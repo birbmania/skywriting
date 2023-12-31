@@ -53,14 +53,14 @@ $("#birds").on("click", ".bird", function () {
     // mark bird as seen
     $("#birds .bird[index='" + index + "']").attr("seen", "");
 
-    $("body").addClass("bird-view");
+    $("#filter").hide();
 });
 
 // hide when button is clicked
 $("#look").on("click", "button[hide]", function () {
     $("#look").hide();
 
-    $("body").removeClass("bird-view");
+    $("#filter").show();
 });
 
 // show filter, header, and birds when the page loads
