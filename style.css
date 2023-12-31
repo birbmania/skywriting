@@ -32,14 +32,6 @@ header {
   box-sizing: border-box;
 }
 
-#birds .bird {
-  position: absolute;
-  width: 100px;
-  text-align: center;
-  padding: 1rem;
-  cursor: grabbing;
-}
-
 #birds .bird[seen] {
   visibility: hidden;
 }
@@ -98,8 +90,8 @@ header {
 .filter-input:checked + .button button {
   background-color: var(--main-color);
   opacity: 1;
-  
 }
+
 #filter button {
   border: 0;
   background: none;
@@ -179,22 +171,32 @@ header {
   background-size: cover;
 }
 
+#birds .bird {
+  width: 100px;
+  padding: 1rem;
+  cursor: grabbing;
+}
+
+#birds .bird,
 #look .bird {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(cloud.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
+    text-align: center;
+    position: absolute;
+    background-image: url(cloud.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#look .bird {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #look .bird .emoji {
