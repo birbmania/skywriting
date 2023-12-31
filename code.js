@@ -57,8 +57,10 @@ $("#birds").on("click", ".bird", function () {
 });
 
 // hide when button is clicked
-$("#look").on("click", "button[hide]", function() {
+$("#look").on("click", "button[hide]", function () {
     $("#look").hide();
+
+    $("body").removeClass("bird-view");
 });
 
 // show filter, header, and birds when the page loads
