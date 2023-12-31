@@ -207,3 +207,8 @@ header {
   cursor: pointer;
   font-family: "Bradley Hand", cursive;
   font-size: 14px;
+}
+
+body.bird-view #filter {
+    display: none;
+}
