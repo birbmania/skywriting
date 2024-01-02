@@ -1,7 +1,7 @@
 # skywriting
 a site for people to share what they love about birds
 
-<strong>NOTE:</strong> not responsive (yet)!
+<strong>NOTE:</strong> not responsive (yet)! best viewed on laptop/desktop and maybe some smaller screens using landscape orientation.
 
 <hr>
 
